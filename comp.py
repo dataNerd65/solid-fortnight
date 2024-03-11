@@ -34,10 +34,11 @@ except ValueError as e:
 
 
 def look_item(user_choice):
+    user_choice_lower = user_choice.lower()
     print("Let me check if the item(s) is present.")
     lemmatizer = WordNetLemmatizer()
-    lemmatized_choice = lemmatizer.lemmatize(user_choice)
-    #print("Lemmatized choice:", lemmatized_choice)
+    lemmatized_choice = lemmatizer.lemmatize(user_choice_lower)
+    print("Lemmatized choice:", lemmatized_choice)
     return lemmatized_choice
 
 def check_item_in_Database(user_choice):
