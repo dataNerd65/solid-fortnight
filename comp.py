@@ -85,6 +85,3 @@ if item_details:
 else:
     print("Sorry, we do not have details for the requested item.")
 
-
-
-
